@@ -4,6 +4,7 @@
 ### Linguagens usadas
 - HTML
 - CSS
+- Propriedade Flexbox 
 
 #### Final
 
