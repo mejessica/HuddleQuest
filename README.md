@@ -5,7 +5,7 @@
 - HTML
 - CSS
 - Propriedade Flexbox 
-- Responsividade para todos as resoluções 
+- Responsividade para quase todas as resoluções 
 
 #### Final
 
