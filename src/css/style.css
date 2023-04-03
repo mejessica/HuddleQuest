@@ -1,75 +1,63 @@
 
 body{
     background:url(../images/bg-desktop.svg) no-repeat #674bb1;
-    background-size: cover 100vh;
+    background-size: cover;
+    min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;   
-}
-
-main{
-    height: 100vh;
-    padding: 30px 70px;
+    font-size: 11px;  
+    padding: 30px 70px; 
 }
 
 header{
-    display: flex;
+    display: flex;  
 }
 
 .logo{
     justify-content: left;
     padding: 25px 0;
-    width: 17%;
-}
-
-@media(max-width:425px){
-    body{
-      background: url(../images/bg-mobile.svg) no-repeat #674bb1;
-    }
-    main{
-        padding: 0 40px 40px 40px;
-    }
-    header{
-        justify-content: flex-start;
-    }
-    .logo{
-        width: 45%;
-    }
+    width: 15%;
 }
 
 .content{
     display: flex;
     width: 100%;
+    height: 64vh;
     margin: 60px 0 45px 0;
     flex-wrap: wrap;
+    max-width: 1600px;
+    align-content: center;
+    justify-content: center;
 }
 
 .content .image{
-    width: 58%;
+    width: 50%;
+    text-align: center;
+
 }
 
 .content .description{
-    width: 35%;
+    width: 40%;
     text-align: left;
-    margin-left: 45px;
+    margin-left: 35px;
     margin-top: 10px;
 }
 
 .content .description h1{
-    font-size: 33px;
+    font-size: 2.8rem;
     padding: 40px 70px 20px 0;
     color: #fff;
 }
 
 .content .description p{
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.3rem;
+    line-height: 25px;
     padding: 0 20px 0 0;
     color: #fff;
     margin-bottom: 40px;
 }
 
 .content .description a{
-    font-size: 15px;
+    font-size: 1.2rem;
     font-family:  Roboto, sans-serif;
     padding: 13px 50px;
     border-radius: 50px;
@@ -86,45 +74,22 @@ header{
     color: #fff;
 }
 
-@media(max-width:425px){
-    .content{
-        margin-top: 45px;
-        margin-bottom: 80px;
-    }
-    .content .image{
-        width: 100%;
-    }
-    .content .description{
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-    }
-    .content .description h1{
-        padding-right: 0;
-        font-size: 23px;
-    }
-    .content .description p{
-        font-size: 15px;
-        padding-right: 0;
-    }
-    .content .description a{
-        padding: 13px 80px;
-        font-size: 13px;
-    }
-}
-
 .footer {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 20px;
+    width: 100%;
+}
+.info ,.attribution p{
+    font-size: 1rem;
 }
 
 .info .attribution a{
     color: #fff;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 20px;
+    width: 2.5rem;
 }
 
 .social-media a i{
@@ -133,7 +98,7 @@ header{
     border-radius: 50px;
     border: 1px solid #fff;
     color: #fff;
-    width: 40px;
+    width: 2.5rem;
     margin-left: 10px;
     text-align: center;
     transition: 0.3s;    
@@ -144,27 +109,136 @@ header{
     border: 1px solid #fe50c3;
 }
 
-@media(max-width:425px){
+
+@media(max-width: 1440px){
+    .logo{
+        width: 20%;
+    }
+    .content .description h1{
+        font-size:2rem;
+    }
+    .content .description p{
+        font-size: 1.2rem;
+    }
+    .content .description a{
+        font-size: 1rem;
+    }
+}
+@media(max-width:1024px){
+    .content{
+        margin-top: 0;
+    }
+    .content .description h1{
+        font-size: 1.5rem;
+    }
+    .content .description p{
+        font-size: 1rem;
+    }
+    .content .description a{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:1023px){
+    body{
+        background: url(../images/bg-mobile.svg) no-repeat #674bb1;
+        background-size: contain;
+        padding: 0;
+    }
+    main{
+          padding: 0 40px 40px 40px;
+    }
+    header{
+          justify-content: flex-start;
+    }
+    .logo{
+          width: 30%;
+    }
+    .content .image{ 
+        width: 60%;
+    }
+    .content .description{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .content .description h1{
+        padding-right: 0;
+        font-size: 1.5rem;
+    }
+    .content .description p{
+        font-size: 1.2rem;
+        padding-right: 0;
+    }
+    .content .description a{
+        padding: 13px 80px;
+        font-size: 1.3rem;
+    }
+    .footer{
+        justify-content: center;
+        padding-bottom: 40px;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .social-media a i{
+        flex-basis: 0;
+        font-size: 15px;
+        padding: 10px 10px;
+    }
+    .attribution{
+        display: none;
+    }
+}
+
+@media(max-width:478px){
+    body{
+        background: url(../images/bg-mobile.svg) no-repeat #674bb1;
+        background-size:contain;
+        padding: 0;
+    }
+    .logo{
+          width: 45%;
+    }
+    .content{
+        margin-top: 45px;
+        margin-bottom: 80px;
+    }
+    .content .image{ 
+        width: 100%;
+    }
+    .content .description{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .content .description h1{
+        padding-right: 0;
+        font-size: 2.3rem;
+    }
+    .content .description p{
+        font-size: 1.5rem;
+        padding-right: 0;
+    }
+    .content .description a{
+        padding: 13px 80px;
+        font-size: 1.3rem;
+    }
     .footer{
         justify-content: center;
         padding-bottom: 40px;
         width: 100%;
         
     }
-    
     .social-media a i{
         flex-basis: 0;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding: 10px 10px;
     }
 
     .attribution{
         display: none;
     }
+
+
 }
-
-
-
-
-
 
