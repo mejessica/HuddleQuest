@@ -110,7 +110,7 @@ header{
 }
 
 
-@media(max-width: 1440px){
+@media(max-width: 1350px){
     .logo{
         width: 20%;
     }
@@ -181,9 +181,9 @@ header{
         padding-top: 50px;
     }
     .social-media a i{
-        flex-basis: 0;
-        font-size: 15px;
-        padding: 10px 10px;
+        flex-basis: 1;
+        font-size: 20px;
+       
     }
     .attribution{
         display: none;
@@ -204,7 +204,7 @@ header{
         margin-bottom: 80px;
     }
     .content .image{ 
-        width: 100%;
+        width: 90%;
     }
     .content .description{
         width: 100%;
@@ -213,15 +213,15 @@ header{
     }
     .content .description h1{
         padding-right: 0;
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
     .content .description p{
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-right: 0;
     }
     .content .description a{
         padding: 13px 80px;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .footer{
         justify-content: center;
@@ -230,8 +230,8 @@ header{
         
     }
     .social-media a i{
-        flex-basis: 0;
-        font-size: 1.5rem;
+        flex-basis: 1;
+        font-size: 15px;
         padding: 10px 10px;
     }
 
